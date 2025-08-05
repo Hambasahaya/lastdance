@@ -1,0 +1,110 @@
+.authLayout {
+  background-image: url('/img/bgAuth.png');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 2rem;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+.box-login {
+  z-index: 2;
+  max-width: 500px;
+  width: 100%;
+  padding: 2rem;
+  background-color: transparent;
+}
+
+.box-login .card {
+  background-color: white;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 40px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25) inset, 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.box-login .form-group {
+  margin-bottom: 2rem;
+}
+.box-login .form-group {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.box-login .form-group label {
+  position: absolute;
+  left: 0;
+  bottom: 0.5rem;
+  color: #0c1e2c;
+  font-size: 1rem;
+  font-weight: 600;
+  pointer-events: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.box-login .input-wrapper input:focus + label,
+.input-wrapper input:not(:placeholder-shown) + label {
+  transform: translateY(-2.5rem);
+  font-size: 0.85rem;
+  color: #007bff; 
+}
+
+.box-login .input-wrapper input {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: transparent;
+  padding: 0.5rem 0 0.5rem 0;
+  width: 100%;
+  color: #0c1e2c;
+}
+
+.box-login .input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #0c1e2c;
+  padding-bottom: 0.5rem;
+}
+
+.box-login .card .input-wrapper input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: transparent;
+  padding: 0.5rem 2.5rem 0.5rem 0; 
+  color: #0c1e2c;
+}
+
+.box-login .input-wrapper .icon {
+  position: absolute;
+  right: 0;
+  bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.box-login .input-wrapper .icon  {
+  width: 20px;
+  height: 20px;
+}
+.box-login button{
+    background-color: #0B1D26;
+    color: white;
+    font-size: medium;
+    border-radius: 40px;
+    padding: 12px;
+}
