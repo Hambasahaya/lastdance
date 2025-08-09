@@ -1,7 +1,7 @@
 import AuthLayout from '../../layouts/AuthLayout'
 import LoginPage from './pages/LoginPage'
 export default {
-  path: '/auth',
+  path: '/',
   element: <AuthLayout />,
   children: [
      { index: true, element: <LoginPage /> },
