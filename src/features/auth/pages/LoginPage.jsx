@@ -27,13 +27,13 @@ export default function LoginPage() {
     }
 
     if (hasError) return;
-    if (email === "test@example.com" && password === "123456") {
+    if (email === "kelompokpenerbangrocket@gmail.com" && password === "budiarie") {
       localStorage.setItem("user", JSON.stringify({ email }));
       navigate("/home");
     } else {
-      if (email !== "test@example.com") {
+      if (email !== "kelompokpenerbangrocket@gmail.com") {
         setErrorEmail("Email tidak ditemukan");
-      } else if (password !== "123456") {
+      } else if (password !== "budiarie") {
         setErrorPassword("Password salah");
       }
     }
